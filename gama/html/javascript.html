@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - JavaScript</title>
+<!--- Criando um componente em JavaScript-->
+
+ <!-- Criando um componente em JavaScript-->
+ <script>
+    // alert ("Sejam bem vindos!!!");
+
+    // declarando variáveis
+    /*var empresa="Gama Academy";
+    var mensagem="Sejam todos bem vindos a - ";
+    alert(mensagem+empresa);*/
+
+    // criando um componente para manipular dados
+
+    // var nome= prompt ("Olá qual o seu nome?","Digite o seu nome");
+    // alert("Seja bem vindo "+nome);
+
+    // criando uma função em javascript
+    function mensagem()
+    {
+        alert("Oieee como você está?");
+
+    }
+
+    function validar()
+    {
+        var nome=contato.nome_cliente.value;
+        
+        if (nome==""){
+            alert("O preenchimento deste campo é obrigatório");
+            contato.nome_cliente.focus();
+            return false;
+        }
+
+        alert ("Seja bem vindo "+nome);
+
+    }
+
+
+
+</script>
+
+
+</head>
+<body>
+    <!-- Inserir um cabeçalho-->
+    <h3>Olá seja bem vindo a Gama Academy</h3>
+    <!-- texto parágrafo-->
+    <p>Click no botão abaixo para ter uma interação</p><br>
+    <!-- Botão de Interação-->
+    <input type="button" onclick="mensagem()" value="Me Click">
+
+    <br>
+    <br>
+    <!-- Inseri um cabeçalho-->
+    <h3>Preencha o campo abaixo</h3>
+    <!-- Criei um formulário-->
+    <form id="contato" method="POST">
+        Nome Cliente: <input type="text" name="nome_cliente"><br><br>
+        <!-- Inserir um botão-->
+        <input type="submit" onclick="return validar()" value="Enviar">
+    </form>
+
+
+    
+</body>
+</html>
