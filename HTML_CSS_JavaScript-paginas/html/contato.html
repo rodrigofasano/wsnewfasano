@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - Contato</title>
+    <!--Chamando um estilos CSS da biblioteca-->
+<link rel="stylesheet" href="../css/stilos.css">
+
+</head>
+<body>
+    <!-- Criando um menu na pagina utilizando tabela-->
+    <table border="0" width="100%" class="menu">
+        <!-- Criando uma linha na tabela-->
+        <tr>
+            <!-- Criando colunas na tabela-->
+            <td align="center"><img src="../imagens/logo_gama.png" width="160" height="40"></td>
+            <td align="right"><a href="../html/index.html" class="menu">QUEM SOMOS</a></td>
+            <td align="right"><a href="../html/para_empresas.html" class="menu">PARA EMPRESAS</a></td>
+            <td align="right"><a href="../html/para_pessoas.html" class="menu">PARA PESSOAS</a></td>
+            <td align="right"><a href="../html/contato.html" class="menu">CONTATO</a></td>
+            <td align="right"><a href="../html/conteudos.html" class="menu">CONTEÚDOS</a></td>
+        </tr>
+    </table>
+<br>
+  <!-- Criando os campos do nosso formulário-->
+  <form id="contatos" method="POST">
+    <!--Criando uma área para desenvolver os campos-->
+    <fieldset>
+        <!--Inserindo uma legenda no formulário-->
+        <legend>Preencha as informações para realizar o nosso curso</legend>
+        <label>Nome:</label><input type="text" name="nome_cliente" required><br><br>
+        <label>Email:</label><input type="email" name="email_cliente" required><br><br>
+        <label>Senha:</label><input type="password" name="senha_cliente" required><br><br>
+        <!-- Inserindo um campo do tipo radio-->
+        <label>Genero:</label>
+        <input type="radio" name="genero_cliente" value="Feminino" required>Feminino 
+        <input type="radio" name="genero_cliente" value="Masculino" required>Masculino
+        <input type="radio" name="genero_cliente" value="Outros" required>Outros
+        <input type="radio" name="genero_cliente" value="Não Informado" required>Não Informado<br><br>
+        <!-- Inserido um campo do tipo dropdown-->
+        <label>Escolha o curso que deseja fazer:</label>
+        <select required>
+            <option value="" name="curso_escolhido"></option>
+            <option value="HTML" name="curso_escolhido">HTML</option>
+            <option value="CSS" name="curso_escolhido">CSS</option>
+            <option value="XML" name="curso_escolhido">XML</option>
+            <option value="JS" name="curso_escolhido">JavaScript</option>
+        </select><br><br>
+        <!-- Inserindo um campo data-->
+        <label>Escolha a data que seja fazer o curso:</label>
+        <input type="date" nome="data_curso" required><br><br>
+        <!-- Inserindo um campo do tipo check box-->
+        <label>Escolha qual período deseja fazer o curso:</label>
+        <input type="checkbox" name="periodo" value="Manhã">Manhã
+        <input type="checkbox" name="periodo" value="Tarde">Tarde
+        <input type="checkbox" name="periodo" value="Noite">Noite<br><br>
+        <!--Inserindo um campo de mensagem com textarea-->
+
+        <!--Esta string permite definir o tamanho de caracteres no campo maxlength="" -->
+        <label>Mensagem:</label><br>
+        <textarea name="mensagem" cols="30" rows="3"  ></textarea><br><br>
+        <label>Insira um comprovante de residência:</label>
+        <input type="file" name="arquivo_anexo"><br><br>
+
+        <!-- Inserindo um botão no nosso formulário-->
+        <input type="submit" value="Enviar">
+    
+    
+    
+    </fieldset>
+</form>
+</body>
+</html>

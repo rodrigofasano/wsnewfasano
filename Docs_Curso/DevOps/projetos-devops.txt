@@ -1,0 +1,37 @@
+https://github.com/rafaelrsal/first-project
+https://github.com/phowka-debug/first-deploy
+https://github.com/Biitmec/first-project
+https://github.com/Rodineial/first-project
+https://github.com/rodrigofasano/first-deploy
+https://github.com/rcalima/first-deploy
+https://github.com/waldemirgil/first-deploy
+https://github.com/nmnrules/first-deploy
+https://github.com/Rodson2712/first-deploy
+https://github.com/erickconte/first-deploy
+https://github.com/GuilhermePessotti/first-project
+https://github.com/jessica-zeferino/first-project.git
+https://github.com/sterruel/First-project
+https://github.com/leticiastela/first_project
+https://github.com/RogerioAtensia/first-deploy
+
+************************************
+## WebHook - github ##
+http://<ip-servidor>:8080/github-webhook/
+
+## Docker ##
+https://github.com/robsonscruz/01-infra-docker
+https://github.com/robsonscruz/03-base-app-docker
+
+## AWS EC2 ##
+00-deploy/
+    - (pipeline) 01-first-deploy    - https://github.com/robsonscruz/01-first-app.git
+    - (pipeline) 99-service-deploy  - https://github.com/robsonscruz/99-service-deploy.git
+        - PARAMETERS
+            - REPOSITORY
+            - PROJECT_NAME
+99-alunos/
+    - (pipeline - aluno) robson-santos-cruz - https://github.com/robsonscruz/02-base-app.git
+    - (pipeline - aluno) seu-nome - https://github.com/robsonscruz/04-aluno-example.git (exemplo)
+
+# 11. With docker
+- (pipeline) robson-santos-cruz - https://github.com/robsonscruz/03-base-app-docker.git
