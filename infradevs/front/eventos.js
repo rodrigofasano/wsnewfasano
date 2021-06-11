@@ -9,9 +9,10 @@ function filtrar() {
         var tabela = 
         "<table border='1' align='center' width='100%'>" +
         "<tr>" +
-        "<th>ID Evt</th>" +
+        "<th align='center'>ID Evt</th>" +
         "<th>Data</th>" +
         "<th>Equipamento</th>" +
+        "<th>IP</th>" +
         "<th>Alarme</th>" +
         "<th>Descrição</th>" +
         "</tr>";
@@ -23,6 +24,7 @@ function filtrar() {
             "<td align='center'>" + res[contador].id + "</td>" +
             "<td>" + res[contador].data + "</td>" +
             "<td>" + res[contador].equipamento.nomeEquipamento + "</td>" +
+            "<td>" + res[contador].equipamento.numIp + "</td>" +
             "<td>" + res[contador].alarme.nomeAlarme + "</td>" +
             "<td>" + res[contador].alarme.descricao + "</td>" +
             "</tr>";

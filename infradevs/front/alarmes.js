@@ -21,7 +21,7 @@ function carregar() {
     .then(res => {
         var tabela = 
         "<table border='1' align='center' width='100%'>" +
-        "<tr>" +
+        "<tr align='center'>" +
         "<th>ID Alarme</th>" +
         "<th>Alarmes</th>" +
         "<th>Descrição</th>" +
