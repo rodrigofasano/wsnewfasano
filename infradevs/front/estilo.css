@@ -1,0 +1,73 @@
+/*Criando estilos para os comandos nativos em HTML*/
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color:rgb(88, 11, 119);
+ }
+ p{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size:14px;
+     color:rgb(82, 79, 81);
+ }
+ 
+ body{
+     background-color: rgb(189, 141, 37);
+ }
+ s
+ form{
+     font-size: 12px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color:darkred;
+ }
+ 
+ 
+ /*Criando uma classe de estilo para a nossa página*/
+ .observação{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 10px;
+     color:grey;
+ }
+ 
+ .menu{
+     font-size: 16px;
+     font-weight: bolder;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color:rgb(4, 4, 59);
+ }
+ 
+ .campo_nome{
+     width: 260px;
+     color:darkred;
+     background-color: rgb(255, 251, 0);
+ }
+ 
+ .campo_email{
+     width: 280px;
+     color:darkred;
+     background-color: rgb(255, 251, 0);
+ 
+ }
+ 
+ /*Criar um padrão de cores para o bootstrap*/
+ 
+  /*.container{
+     border: 3px solid black;
+ 
+ }
+ */
+ .div1{
+     background-color: yellow;
+ }
+ 
+ .div2{
+     background-color:green;
+ }
+ 
+ .div3{
+     background-color: blue;
+ }
+ 
+ .div4{
+     background-color: red;
+ }
