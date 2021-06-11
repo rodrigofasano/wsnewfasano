@@ -14,36 +14,41 @@
 
 <body onload="exibirusuario()">
     <div class="container">
-
         <div class="row">
             <div class="col-12">
                 <br>
                 <img src="img/logo_itau.png">
                 <BR>
-                <h3 style="text-align: center;">Sistema de monitoração de Eventos - InfraDevs Monit</h3>
+                <h3 style="text-align: center;">Sistema de monitoração de Eventos <span class="badge badge-info">
+                        InfraDevs Monit</span> </h3>
             </div>
         </div>
-        <BR><BR>
-        <div class="row">
-            <h5 style="text-align: center;">Usuário logado no momento:</h5>
-            <div id="foto" class="col-12">
-            </div>
-        </div>
+    </div>
+    <BR>
+    <BR>
+    <div class="container">
+        <div class="p-3 mb-2 bg-light text-dark">
+            <h5 style="text-align: left;">Usuário logado no momento:</h5>
+            <div class="row">
 
-        <div class="row">
-            <div id="dados" class="col-12">
+                <div id="foto" class="col-sm-1">
+                </div>
+                <div id="dados" class="col-sm-11">
+                </div>
             </div>
         </div>
-        <button onclick="sair()" type="button" class="btn btn-primary"> Sair </button>
         <BR>
+        <button onclick="sair()" type="button" class="btn btn-primary">Sair</button>
         <BR>
         <BR>
         <BR>
         <h5 style="text-align: left;">Relatório de eventos por periodo</h5>
         <button onclick="window.location='eventos.html'" type="button" class="btn btn-success">Gerar</button>
-        <BR><BR><BR>
+        <BR>
+        <BR>
         <h5 style="text-align: left;">Relatório de alarmes</h5>
         <button onclick="window.location='alarmes.html'" type="button" class="btn btn-success">Gerar</button>
+
 
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
