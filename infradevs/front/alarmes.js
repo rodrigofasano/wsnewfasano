@@ -1,16 +1,30 @@
-function filtrar() {
+function validausuario() {
 
-    fetch ("http://localhost:8080/alarmes/") 
-      
-    .then(res => res.none())
+    var userstr = localStorage.getItem("userlogado");
+    if (userstr==null){
+        window.location = "login.html";
+    } else {
+      carregar();  
+    }}
+
+function sair() {
+
+    localStorage.removeItem("userlogado");
+    window.location = "login.html"
+    
+}
+
+function carregar() {
+
+     fetch ("http://localhost:8080/alarmes")
+    .then(res => res.json())
     .then(res => {
         var tabela = 
         "<table border='1' align='center' width='100%'>" +
         "<tr>" +
         "<th>ID Alarme</th>" +
-        "<th>Nome do Alarme</th>" +
+        "<th>Alarmes</th>" +
         "<th>Descrição</th>" +
-       
         "</tr>";
                       
         for (contador=0;contador<res.length;contador++) {
@@ -18,8 +32,8 @@ function filtrar() {
             tabela+=
             "<tr>" +
             "<td align='center'>" + res[contador].id + "</td>" +
-            "<td>" + res[contador].alarme.nomeAlarme + "</td>" +
-            "<td>" + res[contador].alarme.descricao + "</td>" +
+            "<td>" + res[contador].nomeAlarme + "</td>" +
+            "<td>" + res[contador].descricao + "</td>" +
             "</tr>";
         }
         

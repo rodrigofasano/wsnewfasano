@@ -6,33 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatório de Alarmes - InfraDevs Monit</title>
     
-    <link rel="stylesheet" href="../front/estilo.css">
-    
+       
 
 
-    <script type="text/javascript" src="eventos.js"></script>
+    <script type="text/javascript" src="alarmes.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="validausuario()">
     
-    <div class="container">
+    <div width="100%" class="container">
         <div class="row">
             
-            <div class="col-8">
+            <div class="col-12">
                 <br>
                 <img src="img/logo_itau.png">
                  
-                 <h3 style="text-align: center;">Alarmes do sistema cadastrados </h3>
+                 <h3 style="text-align: center;">Visualizar todos alarmes cadastrados no sistema</h3>
             </div>
         </div>
         <BR>
+        <div class="row">
+
+        </div>
+
         <BR>
-        <button onclick="filtrar()" type="button" class="btn btn-success">Filtrar</button>  
+        
         <button onclick="window.location='usuario.html'" type="button" class="btn btn-primary">Menu</button>  
-        <button onclick="localStorage.clear(),window.location='login.html'" type="button" class="btn btn-primary">Sair</button> 
+        <button onclick="sair()" type="button" class="btn btn-primary">Sair</button> 
         
          
         <BR><BR>
@@ -54,5 +57,4 @@
         crossorigin="anonymous"></script>
 
 </body>
-
 </html>

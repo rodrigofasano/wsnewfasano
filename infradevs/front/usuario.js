@@ -42,3 +42,11 @@ function logar() {
     });
   
 }
+
+function sair() {
+
+  localStorage.removeItem("userlogado");
+  window.location = "login.html"
+  
+}
+

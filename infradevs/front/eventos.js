@@ -37,3 +37,19 @@ function filtrar() {
     });
 
 }
+
+
+function validausuario() {
+
+    var userstr = localStorage.getItem("userlogado");
+    if (userstr==null){
+        window.location = "login.html";
+    } }
+
+function sair() {
+
+    localStorage.removeItem("userlogado");
+    window.location = "login.html"
+    
+}
+  
